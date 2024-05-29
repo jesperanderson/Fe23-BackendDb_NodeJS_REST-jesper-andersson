@@ -1,0 +1,25 @@
+{
+  "name": "fe23-backenddb_nodejs_rest-jesper-andersson",
+  "version": "1.0.0",
+  "description": "- GET /api/students - Retrieve all students\r - GET /api/students/:id - Retrieve a specific student by ID\r - POST /api/students - Create a new student\r - PUT /api/students/:id - Update a student by ID\r - DELETE /api/students/:id - Delete a student by ID",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./app.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

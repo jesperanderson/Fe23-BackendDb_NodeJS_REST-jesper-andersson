@@ -1,0 +1,22 @@
+<% if(typeof dbData != 'undefined' && dbData.length > 0){ %>
+    <table>
+        <thead>
+            <tr>
+                <% Object.keys(dbData[0]).forEach(header => { %>
+                    <th><%= header %></th>
+                <% }); %>
+            </tr>
+        </thead>
+        <tbody>
+            <% dbData.forEach(row => { %>
+                <tr>
+                    <% Object.values(row).forEach(value => { %>
+                        <td><%= value %></td>
+                    <% }); %>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+<% } else { %>
+    <p>No data available</p>
+<% } %>
